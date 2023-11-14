@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Controllers;
 
 Use App\Models\NewsModel;
@@ -21,7 +20,8 @@ use CodeIgniter\Exceptions\PageNotFoundException; // Add this line
 ##############################################################################
 class News extends BaseController
 {
-    public function index(){
+    public function index()
+    {
         #return("<h1> New Controler News->index()</h1>");
         $model = model(NewsModel::class);
 
@@ -44,7 +44,9 @@ class News extends BaseController
             . view('news/index')
             . view('templates/footer');
     }
-    public function show($slug = null){
+
+    public function show($slug = null)
+    {
         #return("<h1> New Controler News->show(\$slag)</h1>");
         $model = model(NewsModel::class);
 
@@ -56,8 +58,50 @@ class News extends BaseController
 
         $data['title'] = $data['news']['title'];
 
-        echo("<pre>");
-        print_r($data);
-        echo("</pre>");
+        // echo("<pre>");
+        // print_r($data);
+        // echo("</pre>");
+
+        return view('templates/header', $data)
+            . view('news/view')
+            . view('templates/footer');
+    }
+
+    public function new()
+    {
+        helper('form');
+
+        return view('templates/header', ['title' => 'Create a news item'])
+            . view('news/create')
+            . view('templates/footer');
+    }
+
+    public function create()
+    {
+        helper('form');
+
+        // Checks whether the submitted data passed the validation rules.
+        if (! $this->validate([
+            'title' => 'required|max_length[255]|min_length[3]',
+            'body'  => 'required|max_length[5000]|min_length[10]',
+        ])) {
+            // The validation fails, so returns the form.
+            return $this->new();
+        }
+
+        // Gets the validated data.
+        $post = $this->validator->getValidated();
+
+        $model = model(NewsModel::class);
+
+        $model->save([
+            'title' => $post['title'],
+            'slug'  => url_title($post['title'], '-', true),
+            'body'  => $post['body'],
+        ]);
+
+        return view('templates/header', ['title' => 'Create a news item'])
+            . view('news/success')
+            . view('templates/footer');
     }
 }

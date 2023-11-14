@@ -1,0 +1,103 @@
+CRITICAL - 2023-11-13 16:36:54 --> Undefined variable $slag
+in APPPATH\Controllers\News.php on line 53.
+ 1 APPPATH\Controllers\News.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $slag', 'C:\\xampp\\htdocs\\instituciones\\app\\Controllers\\News.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\News->show('say-it-isnt-s1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-13 16:39:51 --> Invalid file: "news/view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('news/view.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('news/view', [], true)
+ 3 APPPATH\Controllers\News.php(63): view('news/view')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\News->show('say-it-isnt-so')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 19:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-13 19:41:45 --> Unmatched '}'
+in APPPATH\Controllers\News.php on line 106.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\instituciones\\app\\Controllers\\News.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\News')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\News')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\News', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 19:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:54:42 --> CSRF token verified.
+INFO - 2023-11-13 19:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 19:56:42 --> CSRF token verified.
+CRITICAL - 2023-11-13 19:56:42 --> Allowed fields must be specified for model: "App\Models\NewsModel"
+in SYSTEMPATH\Model.php on line 736.
+ 1 SYSTEMPATH\Model.php(736): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\NewsModel')
+ 2 SYSTEMPATH\BaseModel.php(763): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\News.php(97): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\News->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 20:05:04 --> CSRF token verified.
+CRITICAL - 2023-11-13 20:05:05 --> Invalid file: "news/success.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('news/success.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('news/success', [], true)
+ 3 APPPATH\Controllers\News.php(104): view('news/success')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\News->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 21:13:43 --> CSRF token verified.
+ERROR - 2023-11-13 21:13:44 --> mysqli_sql_exception: Duplicate entry 'lucha-libre' for key 'slug' in C:\xampp\htdocs\instituciones\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\instituciones\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ne...', 0)
+#1 C:\xampp\htdocs\instituciones\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ne...')
+#2 C:\xampp\htdocs\instituciones\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ne...')
+#3 C:\xampp\htdocs\instituciones\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ne...', Array, false)
+#4 C:\xampp\htdocs\instituciones\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\instituciones\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\instituciones\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\instituciones\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\instituciones\app\Controllers\News.php(97): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\instituciones\system\CodeIgniter.php(942): App\Controllers\News->create()
+#10 C:\xampp\htdocs\instituciones\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#11 C:\xampp\htdocs\instituciones\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\instituciones\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-13 21:13:44 --> Duplicate entry 'lucha-libre' for key 'slug'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `news` (`title`, `slug`, `body`) VALUES (:title:, :slug:, :body:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\News.php(97): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\News->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-13 21:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-13 21:23:55 --> CSRF token verified.
